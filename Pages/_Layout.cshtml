@@ -17,11 +17,19 @@
         <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
         <script src="js/site.js"></script>
         <style>
-            body { background-color:#444654; }
+            body { background-color:#444654; 
+            --bs-secondary-rgb: 108,117,125;
+            }
             .form-control { 
-                            background-color: #40414f;
-                            border: 1px solid #373a3c; 
-                        }
+                background-color: #40414f;
+                border: 1px solid #373a3c; 
+            }
+            .btn-outline-secondary {
+                --bs-btn-color: #838686;
+            }
+            .toast-body {
+                color: #d1d5db;
+            }
         </style>
         
     </head>

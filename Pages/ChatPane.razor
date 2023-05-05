@@ -81,7 +81,7 @@
                     <div class="toast-container position-static w-100 d-flex flex-column align-items-stretch">
                         @foreach (var msg in _messagesInChat)
                         {
-                            <div class="toast fade show w-75 rounded-3 @(msg.Sender == nameof(Participants.Assistant) ? "align-self-end" : "align-self-start")">
+                            <div class="toast fade show w-75 rounded-3 @(msg.Sender == nameof(Participants.Assistant) ? "align-self-end" : "align-self-start")" @(msg.Sender == nameof(Participants.Assistant) ? style="--bs-toast-bg: #444654;" : "">
                                 <div class="@(msg.Sender == nameof(Participants.Assistant) ? "text-dark" : "text-light")">
                                     <i class="bi @(msg.Sender == nameof(Participants.Assistant) ? "bi-robot" : "bi-person") me-1" aria-hidden="true"></i>
                                     <strong class="me-auto text-capitalize">
